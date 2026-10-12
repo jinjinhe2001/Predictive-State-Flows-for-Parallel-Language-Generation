@@ -1,0 +1,1 @@
+--z-level 0.0 --sampling-steps 50 --num-samples 1000 --gen-batch 50 --rc-mode zero --settings 1.0:0.60

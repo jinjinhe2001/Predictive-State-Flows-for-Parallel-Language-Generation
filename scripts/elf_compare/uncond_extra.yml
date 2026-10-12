@@ -1,0 +1,23 @@
+# Extra ELF-B unconditional operating points (ELF has no temperature knob: its PPL-entropy
+# curve can only be traced by step count / gamma). 40 and 48 steps at the paper's gamma 1.5,
+# plus 64 steps at gamma 1.5 (the shipped 64-step config uses gamma 1.0).
+- sampling_method: sde
+  num_sampling_steps: [40]
+  cfgs: [1]
+  sde_gamma: 1.5
+  self_cond_cfg_scales: [3]
+  time_schedule: logit_normal
+
+- sampling_method: sde
+  num_sampling_steps: [48]
+  cfgs: [1]
+  sde_gamma: 1.5
+  self_cond_cfg_scales: [3]
+  time_schedule: logit_normal
+
+- sampling_method: sde
+  num_sampling_steps: [64]
+  cfgs: [1]
+  sde_gamma: 1.5
+  self_cond_cfg_scales: [3]
+  time_schedule: logit_normal

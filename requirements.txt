@@ -1,0 +1,11 @@
+# Minimum versions. The paper's runs used exactly: Python 3.14.5, torch 2.12.0 (CUDA 13.0), numpy 2.4.6,
+# transformers 5.10.2, datasets 5.0.0, huggingface_hub 1.18.0, tokenizers 0.22.2, mauve-text 0.4.0
+# (scikit-learn 1.9.1, faiss-cpu 1.15.0), on 8x H100 80GB with bfloat16 autocast.
+# The CPU smoke test in tests/ also passes with Python 3.12 and torch 2.14.
+torch>=2.12
+numpy>=2.2
+transformers>=5.10
+datasets>=5.0
+huggingface_hub>=1.0
+mauve-text>=0.4
+pytest>=8.0

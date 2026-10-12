@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+data/
+runs/
+checkpoints/
+outputs/
+*.pt
+*.log
+texts_*.jsonl

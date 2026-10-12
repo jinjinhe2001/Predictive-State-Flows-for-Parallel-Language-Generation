@@ -1,0 +1,1 @@
+--num-blocks 32 --encoder prefix --causal-latents --boundary-tokens --sc-cfg --decoder-depth 18 --level-cond --rc-dim 64 --rc-lookahead --denoiser-bottleneck 256
