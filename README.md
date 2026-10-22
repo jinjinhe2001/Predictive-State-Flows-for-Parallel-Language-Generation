@@ -34,6 +34,7 @@ filling in the local token details.
 - **2026-10-22**: Comparison with [NCM](https://github.com/HazyResearch/ncm) under its own OpenWebText protocol
   (NCM's released scorer: GPT-2 Large, 5 seeds × 256 samples of 1024 tokens; timing on one H100 at batch 16, FP32).
   At NCM's entropy (H = 5.42), PSF K=8 reaches a generative perplexity of 32.9 against NCM's 83.1, and PSF-L 25.8.
+  Scripts, protocol differences and the full table: [`scripts/ncm_protocol/`](scripts/ncm_protocol).
 
   <p align="center">
     <img src="assets/ncm_owt_comparison.png" width="80%" alt="Generative perplexity against seconds per sequence on OpenWebText under NCM's protocol: PSF K=32/16/8 and PSF-L lie below NCM, DUO, SEDD and MDLM">
@@ -85,6 +86,7 @@ psf/
   training/              losses and the two trainers
   utils/                 data loading, distributed helpers, generation metrics
 scripts/                 entry points (training, sampling, evaluation, analyses)
+  ncm_protocol/          evaluation and timing under NCM's OpenWebText protocol
 configs/                 model flags, sampling settings, one training script per model, evaluation
 tests/                   CPU tests: toy training pipeline, landing-target invariants
 ```
