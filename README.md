@@ -64,6 +64,13 @@ This reduces diffusion from `L` token-level states to `K << L` predictive states
 depth to `L/K`. On unconditional OpenWebText, a 197M-parameter model with `K = 8` reaches a generative perplexity of
 22.8 at entropy 5.16 with 0.31 TFLOPs per 1024-token document, versus 24.0 at 7.2 TFLOPs for ELF-B with 32 steps.
 
+<p align="center">
+  <img src="assets/figure3a.png" width="60%" alt="Figure 3a of the paper: generative perplexity against entropy for PSF, PSF-L, ELF-B, BD3-LM and GPT-2 small on OpenWebText">
+  <br><sub>Figure 3a of the paper: generative perplexity against entropy on OpenWebText. PSF and PSF-L at K=8 with the
+  plain sampler (solid) and the states-only nucleus sampler (hollow, dotted); ELF-B with 32/64 steps, BD3-LM with block
+  4 (hollow dashed: their guidance/temperature sweeps). The dashed line marks entropy 5.16.</sub>
+</p>
+
 ## Installation
 
 ```bash
