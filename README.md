@@ -10,12 +10,15 @@ Georgia Institute of Technology<br>
 </p>
 
 <p align="center">
-<a href="https://arxiv.org/abs/2610.12898">Paper (arXiv)</a> | <a href="https://huggingface.co/jinjinhe2001/PSF-ParallelLM">Checkpoints (Hugging Face)</a>
+  <a href="https://arxiv.org/abs/2610.12898"><img src="https://img.shields.io/badge/arXiv-2610.12898-b31b1b.svg" alt="arXiv 2610.12898"></a>
+  <a href="https://jinjinhe2001.github.io/psf/"><img src="https://img.shields.io/badge/Project-Page-0a6f96.svg" alt="Project page"></a>
+  <a href="https://huggingface.co/jinjinhe2001/PSF-ParallelLM"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-ffcc4d.svg" alt="Checkpoints on Hugging Face"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT license"></a>
 </p>
 
 <p align="center">
   <img src="assets/generation.gif" width="100%" alt="PSF generating a document: the flow prior turns noise into 8 predictive states, then the block decoder writes all 8 blocks in parallel">
-  <br><sub>Want to pause? <a href="assets/generation.mp4">Download the video version</a>.</sub>
+  <br><sub>Want to pause? Watch it with player controls on the <a href="https://jinjinhe2001.github.io/psf/">project page</a> or <a href="assets/generation.mp4">download the video</a>.</sub>
 </p>
 
 <p align="center">
@@ -25,6 +28,11 @@ Georgia Institute of Technology<br>
 A predictive state s<sub>k</sub> = E(x<sup>(&lt;k)</sup>) summarizes only the blocks before block k; block k itself is
 unseen. The flow prior generates all states jointly from noise, and the block decoder writes the blocks in parallel,
 filling in the local token details.
+
+## News
+
+- **2026-10-12**: Code, all 11 checkpoints of the paper ([Hugging Face](https://huggingface.co/jinjinhe2001/PSF-ParallelLM)) and the [project page](https://jinjinhe2001.github.io/psf/) are public.
+- **2026-10-09**: The paper is on [arXiv](https://arxiv.org/abs/2610.12898).
 
 ## Overview
 
