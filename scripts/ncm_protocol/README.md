@@ -3,6 +3,13 @@
 Scripts behind the [NCM](https://github.com/HazyResearch/ncm) comparison in the top-level README. They evaluate the
 released PSF checkpoints with NCM's own scorer and timing setup; NCM's numbers are the ones its paper reports.
 
+The protocol is NCM's own, from its repository (commit `c702742`):
+[`config/eval/owt.yaml`](https://github.com/HazyResearch/ncm/blob/c702742/config/eval/owt.yaml) (samples, seeds,
+`cut_at_eos: false`), [`scripts/eval_merge.py`](https://github.com/HazyResearch/ncm/blob/c702742/scripts/eval_merge.py)
+(`genppl`: per-seed corpus perplexity and mean unigram entropy) and
+[`evaluation/gen_ppl.py`](https://github.com/HazyResearch/ncm/blob/c702742/evaluation/gen_ppl.py) (the scorer, imported
+as is by `ncm_score.py`).
+
 ## How the two evaluations differ
 
 | | PSF paper (Table 1) | NCM protocol (this folder) |
