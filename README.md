@@ -31,6 +31,17 @@ filling in the local token details.
 
 ## News
 
+- **2026-10-22**: Comparison with [NCM](https://github.com/HazyResearch/ncm) under its own OpenWebText protocol
+  (NCM's released scorer: GPT-2 Large, 5 seeds × 256 samples of 1024 tokens; timing on one H100 at batch 16, FP32).
+  At NCM's entropy (H = 5.42), PSF K=8 reaches a generative perplexity of 32.9 against NCM's 83.1, and PSF-L 25.8.
+
+  <p align="center">
+    <img src="assets/ncm_owt_comparison.png" width="80%" alt="Generative perplexity against seconds per sequence on OpenWebText under NCM's protocol: PSF K=32/16/8 and PSF-L lie below NCM, DUO, SEDD and MDLM">
+    <br><sub>MDLM, SEDD, DUO and NCM as reported in the NCM paper (Figure 5, Table 8). PSF measured with NCM's scorer,
+    interpolated to H = 5.42, and timed the same way as NCM (FP32 with compiled graphs, which reproduces NCM's
+    reported 80 ms per sequence).</sub>
+  </p>
+
 - **2026-10-12**: Code, all 11 checkpoints of the paper ([Hugging Face](https://huggingface.co/jinjinhe2001/PSF-ParallelLM)) and the [project page](https://jinjinhe2001.github.io/psf/) are public.
 - **2026-10-09**: The paper is on [arXiv](https://arxiv.org/abs/2610.12898).
 
